@@ -1,3 +1,39 @@
 .App {
   text-align: center;
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgb(127, 221, 255);
+  color: rgb(255, 254, 254);
+}
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.ProductsList {
+  background-color: rgb(245, 242, 239);
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(92, 90, 90);
+  color: white;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+}
