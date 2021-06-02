@@ -37,3 +37,8 @@ nav {
   text-align: center;
   text-decoration: none;
 }
+
+ul .link {
+  list-style: none;
+  text-decoration: none;
+}
