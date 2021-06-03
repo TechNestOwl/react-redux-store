@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import {Link} from "react-router-dom";
 
 
 export default function Shop() {
@@ -24,8 +25,12 @@ export default function Shop() {
         <div className="shopList">
             <p>Product Containers</p>
             {items.map(item => (
-                <h1>{item.title}</h1>
-            ))}
+                <h1 key={item.id}>
+                    <Link to="/productPage">
+                    {item.title}
+                    </Link>
+                    </h1>
+            ))};
         </div>
     )
 };

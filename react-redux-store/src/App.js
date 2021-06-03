@@ -1,7 +1,7 @@
 import "./App.css";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import IndividualProductPage from "./components/IndividualProductPage";
+import ProductPage from "./components/ProductPage";
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import Shop from "./components/Shop";
@@ -20,7 +20,7 @@ function App() {
           <Route path="/shop" component={Shop}/>
           <Route path="/about" component={About}/>
           <Route path="/cart" component={Cart}/>
-          <Route path="/product_page" component={IndividualProductPage}/>
+          <Route path="/productpage" component={ProductPage}/>
           <Route path="/contact" component={Contact}/>
         </Switch>
         <Footer />

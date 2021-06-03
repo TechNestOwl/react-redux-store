@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function IndividualProductPage() {
+export default function productPage() {
     return (
         <div>
             <h1>Individual Product</h1>
