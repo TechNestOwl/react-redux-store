@@ -41,3 +41,8 @@ nav {
   text-align: center;
   text-decoration: none;
 }
+
+.footer li {
+  color: white;
+  text-decoration: none;
+}

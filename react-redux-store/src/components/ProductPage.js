@@ -9,12 +9,13 @@ export default function Product({match}) {
         console.log(match)
     }, []);
 
-    const [product, setProduct] = useState([{}])
+    const [product, setProduct] = useState({})
 
     const fetchProduct= async () => {
             
         const fetchProduct = await fetch(`https://fakestoreapi.com/products/${match.params.id}`)
         const product = await fetchProduct.json();
+        setProduct(product);
         console.log(product);
         
     };
@@ -22,7 +23,12 @@ export default function Product({match}) {
 
     return (
         <div>
-            <h1>API id:<br></br> ${match.params.id}</h1>
+            <h1>{product.title}</h1>
+            <img src={product.image} alt="shiny new product"></img>
+            <p>{product.description}</p>
+            <p>${product.price}</p>
+            {/* <p>{product.category}</p> */}
+            <button>Add To Cart</button>
         </div>
     )
 };
