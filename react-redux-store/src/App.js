@@ -17,11 +17,11 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={LandingPage}/>
-          <Route path="/shop" component={Shop}/>
+          <Route path="/shop" exact component={Shop}/>
           <Route path="/about" component={About}/>
           <Route path="/cart" component={Cart}/>
-          <Route path="/productpage" component={ProductPage}/>
           <Route path="/contact" component={Contact}/>
+          <Route path="/shop/:id"  component={ProductPage}/>
         </Switch>
         <Footer />
       </Router>

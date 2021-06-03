@@ -23,10 +23,10 @@ export default function Shop() {
 
     return (
         <div className="shopList">
-            <p>Product Containers</p>
+            <p>Products Container</p>
             {items.map(item => (
                 <h1 key={item.id}>
-                    <Link to="/productPage">
+                    <Link to={`/shop/${item.id}`}>
                     {item.title}
                     </Link>
                     </h1>
