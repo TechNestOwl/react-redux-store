@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+ul {
+  list-style: none;
+  text-decoration: none;
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -35,10 +39,5 @@ nav {
   color: white;
   list-style: none;
   text-align: center;
-  text-decoration: none;
-}
-
-ul .link {
-  list-style: none;
   text-decoration: none;
 }

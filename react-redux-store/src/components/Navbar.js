@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
-
 export default function Navbar() {
     return (
         <div>
             <nav>
-                <p>Logo</p>
+                <Link to="/">
+                    <img src="../assets/321" alt="logo"></img>
+                </Link>
                 <ul className="nav-links">
                     <Link to="/shop">
                         <li>Shop</li>
@@ -21,4 +21,4 @@ export default function Navbar() {
             </nav>
         </div>
     )
-}
+};
