@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react'
+import SET_CART from "../actions/cartAction";
+import "../App.css";
 
 
 
@@ -22,13 +24,14 @@ export default function Product({match}) {
     
 
     return (
-        <div>
+        <div className="productPageContainer">
             <h1>{product.title}</h1>
-            <img src={product.image} alt="shiny new product"></img>
+            <img src={product.image} alt="shiny new product" className="responsive"></img>
             <p>{product.description}</p>
             <p>${product.price}</p>
-            {/* <p>{product.category}</p> */}
             <button>Add To Cart</button>
+            {/* <p>{product.category}</p> */}
+            {/* <button onClick={SET_CART(dispatch,product)}>Add To Cart</button> */}
         </div>
     )
 };

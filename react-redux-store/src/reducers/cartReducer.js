@@ -5,7 +5,7 @@ const initialState = []
 export const cartReducer = (state = initialState, action) =>{
     switch(action.type){
         case SET_CART:
-            return (state = "")
+            return (state = [...state,action.payload])
         default:
             return state
     }

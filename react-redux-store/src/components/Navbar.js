@@ -4,7 +4,7 @@ import logo from '../assets/logo.png'
 
 export default function Navbar() {
     return (
-        <div>
+        <div className="navBar">
             <nav>
                 <Link to="/">
                     <img src={logo} alt="logo"/>

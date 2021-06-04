@@ -26,6 +26,10 @@ nav {
 .shopList {
   background-color: rgb(245, 242, 239);
   align-items: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(32, 159, 198);
+  padding: 10px;
 }
 
 .footer {
@@ -45,4 +49,40 @@ nav {
 .footer li {
   color: white;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .shopList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 241, 237);
+    max-width: 400px;
+    height: auto;
+    padding: 5rem;
+  }
+  .productPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 227, 217);
+  }
+  .navBar {
+    width: 100%;
+  }
+  .responsive {
+    width: 30%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .responsive {
+    width: 150px;
+    height: auto;
+  }
+  .shopList {
+    font-size: small;
+  }
 }

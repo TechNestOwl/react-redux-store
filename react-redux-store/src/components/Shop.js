@@ -23,7 +23,7 @@ export default function Shop() {
 
     return (
         <div className="shopList">
-            <p>Products Container</p>
+            <p>Poorly Rendered List Of Products</p>
             {items.map(item => (
                 <h1 key={item.id}>
                     <Link to={`/shop/${item.id}`}>
@@ -31,6 +31,13 @@ export default function Shop() {
                     </Link>
                     </h1>
             ))};
+            {/* <div className="card">
+                <img src="#" alt="product"></img>
+                <div className="cardInfo">
+                    <h4>Product Name</h4>
+                    <p>Description</p>
+                </div>
+            </div> */}
         </div>
     )
 };
