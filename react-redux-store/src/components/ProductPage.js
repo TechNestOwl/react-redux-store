@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import SET_CART from "../actions/cartAction";
 import "../App.css";
-
-
+import {useDispatch, useSelector} from "react-redux";
 
 export default function Product({match}) {
+    const dispatch = useDispatch()
+    const cartItem = useSelector(state => state.cartItem);
 
     useEffect(()=> {
         fetchProduct();
@@ -12,7 +13,6 @@ export default function Product({match}) {
     }, []);
 
     const [product, setProduct] = useState({})
-
     const fetchProduct= async () => {
             
         const fetchProduct = await fetch(`https://fakestoreapi.com/products/${match.params.id}`)
@@ -22,7 +22,6 @@ export default function Product({match}) {
         
     };
     
-
     return (
         <div className="productPageContainer">
             <h1>{product.title}</h1>
@@ -31,7 +30,7 @@ export default function Product({match}) {
             <p>${product.price}</p>
             <button>Add To Cart</button>
             {/* <p>{product.category}</p> */}
-            {/* <button onClick={SET_CART(dispatch,product)}>Add To Cart</button> */}
+            {/* <button onClick={(dispatch(SET_CART))}>Add To Cart</button> */}
         </div>
     )
 };

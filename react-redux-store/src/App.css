@@ -11,6 +11,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
+  max-height: 20vh;
   background-color: rgb(127, 221, 255);
   color: rgb(255, 254, 254);
 }
@@ -44,6 +45,15 @@ nav {
   list-style: none;
   text-align: center;
   text-decoration: none;
+}
+
+.contactForm {
+  background-color: rgb(254, 254, 254);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 80px;
 }
 
 .footer li {

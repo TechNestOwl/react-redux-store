@@ -20,7 +20,6 @@ export default function Shop() {
         
     };
     
-
     return (
         <div className="shopList">
             <p>Poorly Rendered List Of Products</p>
